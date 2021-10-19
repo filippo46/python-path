@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# %%esercizio1
+# %%esercizio_1
 """
 1. Scrivere una funzione 'scontato' che prende in input un importo e una percentuale di sconto e ritorna
    l'importo scontato. Ad esempio, se l'importo è 1000 e lo sconto è 20 , la funzione ritorna 800 .
@@ -14,6 +14,7 @@ def scontato(importo, sconto):
 # stampo la prova
 print(scontato(1000, 20))
 
+# %%esercizio_2
 """
 2. Scrivere una funzione 'secondi' che prende in input un lasso di tempo espresso tramite numero di ore
    hh , numero di minuti mm e numero secondi ss e ritorna l'equivalente numero di secondi. Ad esempio,
@@ -28,6 +29,7 @@ def secondi(hh, mm, ss):
 # stampo la prova
 print(secondi(2, 1, 11))
 
+# %%esercizio_3
 """
 3. Scrivere una funzione 'invest' che prende in input un capitale C , un interesse annuale i e un numero di
    anni n e ritorna come intero il capitale maturato dopo un investimento di n anni all'interesse i .

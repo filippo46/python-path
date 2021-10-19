@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# %%esercizio_1
 """
 1. Scrivere una funzione media(vals) che prende in input una lista vals (i cui valori si assume siano
    numeri) e ritorna la media dei suoi valori.
@@ -18,6 +19,7 @@ def media(vals):
 # provo la funzione
 print(media([21, 40, 55, 75]))
 
+# %%esercizio_1_advanced
 """
 Versione avanzata
 """
@@ -30,6 +32,7 @@ def media(vals):
 # provo la funzione
 print(media([21, 40, 55]))
 
+# %%esercizio_2
 """
 2. Scrivere una funzione space(s, k) che prende in input una stringa s e un intero k e ritorna una nuova
    stringa che ha i caratteri di s separati da k spazi. Ad esempio
@@ -54,6 +57,7 @@ def space(s, k):
 # stampo la prova
 print(space('ciao ciao', 1))
 
+# %%esercizio_3
 """
 3. Scrivere una funzione crossing_over(m, f) che prese in input due liste m e f (che si assume abbiano
    la stessa lunghezza), ritorna una nuova lista che contiene l'incrocio delle due liste come illustrato dal
