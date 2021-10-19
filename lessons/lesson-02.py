@@ -14,7 +14,6 @@ def scontato(importo, sconto):
 # stampo la prova
 print(scontato(1000, 20))
 
-# %%esercizio2
 """
 2. Scrivere una funzione 'secondi' che prende in input un lasso di tempo espresso tramite numero di ore
    hh , numero di minuti mm e numero secondi ss e ritorna l'equivalente numero di secondi. Ad esempio,
@@ -29,7 +28,6 @@ def secondi(hh, mm, ss):
 # stampo la prova
 print(secondi(2, 1, 11))
 
-# %%esercizio3
 """
 3. Scrivere una funzione 'invest' che prende in input un capitale C , un interesse annuale i e un numero di
    anni n e ritorna come intero il capitale maturato dopo un investimento di n anni all'interesse i .
