@@ -1,0 +1,1 @@
+Collection of snippets I wrote for the course.
