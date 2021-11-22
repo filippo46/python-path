@@ -1,4 +1,4 @@
-from files import png
+import png
 import random
 import math
 import io
@@ -35,7 +35,7 @@ def visd(img, didascalia=''):
     '''Visualizza una immagine in una console IPython seguita da una didascalia opzionale'''
     ipd.display(Immagine(img))
     if didascalia:
-        ipd.display(didascalia)
+        print(didascalia)
 
 def inside(img,x,y):
     '''controlla se le coordinate x, y sono dentro l'immagine'''
@@ -192,8 +192,8 @@ def mosaic_nearest(img,s):
     '''crea una immagine a mosaico di lato s prendendo il colore dall'angolo in alto a sx di ciascun quadretto'''
     h, w = len(img), len(img[0])
     ret = create(w,h,(0,0,0))
-    for jj in range(h//s + 1):
-        for ii in range(w//s + 1):
+    for jj in range(h//s):
+        for ii in range(w//s):
             c = img[jj*s][ii*s]
             draw_quad(ret,ii*s,jj*s,s,s,c)
     return ret
@@ -202,8 +202,8 @@ def mosaic_average(img,s):
     '''crea una immagine a mosaico di lato s prendendo il colore dalla media di ciascun quadretto'''
     h, w = len(img), len(img[0])
     ret = create(w,h,(0,0,0))
-    for jj in range(h//s + 1):
-        for ii in range(w//s + 1):
+    for jj in range(h//s):
+        for ii in range(w//s):
             c = [0,0,0]
             n = 0
             for j in range(jj*s,(jj+1)*s):
@@ -223,8 +223,8 @@ def mosaic_size(img,s):
     '''crea una immagine a mosaico bianco/nero con quadretti di lato proporzionale alla luminosità del quadretto'''
     h, w = len(img), len(img[0])
     ret = create(w,h,(0,0,0))
-    for jj in range(h//s + 1):
-        for ii in range(w//s + 1):
+    for jj in range(h//s):
+        for ii in range(w//s):
             r = 0
             n = 0
             for j in range(jj*s,(jj+1)*s):
